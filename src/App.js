@@ -25,6 +25,9 @@ class App extends Component {
     return (
       <div className="todo-app container">
         <h1 className="center blue-text">Todo's</h1>
+        <p className="center">
+          Click the text to delete the todo after creating one.
+        </p>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
       </div>
